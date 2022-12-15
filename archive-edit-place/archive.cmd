@@ -77,7 +77,7 @@ start https://myxogastria0808.github.io/CodeBox/
 echo ==================================================================
 echo 以下のURLをコピーして所定の位置に貼り付けてください。
 echo.
-echo https://github.com/Myxogastria0808/%date:~0,4%.git
+echo https://myxogastria0808.github.io/%date:~0,4%/
 echo.
 echo (参考) 西暦: %date:~0,4%
 echo.
