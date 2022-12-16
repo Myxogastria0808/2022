@@ -1,6 +1,24 @@
 chcp 65001
 @echo off
 
+color b0
+
+git clone  https://github.com/Myxogastria0808/TestOHS-reset.git
+cd TestOHS-reset
+rmdir /s /q each-club-activity
+mkdir each-club-activity
+cd ..
+cd ..
+xcopy each-club-activity archive-edit-place\TestOHS-reset\each-club-activity\ /e /h /y
+cd archive-edit-place
+cd TestOHS-reset
+git add .
+git commit -m "%date:~0,4%"
+git push origin gh-pages
+rmdir /s /q .git
+cd ..
+rmdir /s /q TestOHS-reset
+rem ===========================未実験領域　終了=========================================
 gh repo create %date:~0,4% --public
 git clone https://github.com/Myxogastria0808/%date:~0,4%.git
 cd %date:~0,4%
